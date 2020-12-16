@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: user-authentication-service
+  data:
+    mongodb:
+      #username: ${MONGO_USERNAME}
+      #password: ${MONGO_PASSWORD}
+      #database: ${MONGO_DATABASE}
+      #port: ${MONGO_PORT}
+      #host: ${MONGO_HOST}
+      database: outreach
+      port: 27017
+      host: localhost
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+server:
+  port: 8089
+version: v1
